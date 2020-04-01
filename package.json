@@ -1,0 +1,21 @@
+{
+  "name": "sms-app",
+  "version": "0.0.1",
+  "description": "An application used to send and receive SMS to/from IoT devices.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Niklas King",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "ejs": "^3.0.2",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "http": "0.0.1-security",
+    "request": "^2.88.2",
+    "socket.io": "^2.3.0"
+  }
+}
