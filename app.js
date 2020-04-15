@@ -22,11 +22,9 @@ app.get("/", function(req, res) {
     res.render("home");
 });
 app.post("/sms_receive", function(req, res) {
-    var message = req.body.receiveCompleted + ": " + 
-                    "\"" + req.body.message + "\"" +
-                    " from " + req.body.deviceUuid +
-                    " (" + req.body.type + ")";
+    var message = JSON.stringify(req.body);
     io.emit('sms-message', message);
+    console.log(req.body);
     res.sendStatus(200);
 });
 http.listen(81, function() {
